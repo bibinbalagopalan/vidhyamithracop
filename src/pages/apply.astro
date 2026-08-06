@@ -1,0 +1,715 @@
+---
+// src/pages/membership-form.astro
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Schedule I - Membership Application Form - VidhyaMithra">
+  <div class="no-print">
+    <Header />
+    <Navigation />
+  </div>
+
+  <div class="content-wrapper" style="justify-content: center;">
+    <main class="main-content" style="flex: 1; max-width: 900px; width: 100%;">
+      <!-- Screen-Only Title Banner -->
+      <div class="content-box no-print title-box-custom">
+        <h2 class="text-center m-0">
+          <span class="lang-ml ml-text" style="color: var(--nic-blue);"
+            >ഷെഡ്യൂൾ I - അംഗത്വ അപേക്ഷാ ഫോം</span
+          >
+          <span class="lang-en" style="color: var(--nic-blue);"
+            >Schedule I - Membership Application Form</span
+          >
+        </h2>
+        <p
+          class="text-center"
+          style="font-size: 14px; color: #555; margin-top: 8px; margin-bottom: 0;"
+        >
+          <span class="lang-ml ml-text"
+            >ഈ ഫോം പൂരിപ്പിച്ച് പ്രിന്റ് എടുത്തു ഒപ്പിട്ട് സൊസൈറ്റി ഓഫീസിൽ
+            സമർപ്പിക്കുക.</span
+          >
+          <span class="lang-en"
+            >Fill out this form digitally or print it out to submit physically
+            at the Society office.</span
+          >
+        </p>
+      </div>
+
+      <!-- Official Schedule I Document -->
+      <div class="content-box application-sheet" id="print-area">
+        <!-- Header -->
+        <div class="form-header text-center">
+          <p class="schedule-label">SCHEDULE – I</p>
+          <h2 class="society-name">
+            <span class="lang-ml ml-text"
+              >വിദ്യാമിത്ര എഡ്യൂക്കേഷണൽ കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റി ലിമിറ്റഡ്</span
+            >
+            <span class="lang-en"
+              >VIDHYAMITHRA EDUCATIONAL CO-OPERATIVE SOCIETY LTD.</span
+            >
+          </h2>
+          <p class="sub-text">
+            <span class="lang-ml ml-text"
+              >(രജിസ്റ്റേർഡ് ഓഫീസ്: എറണാകുളം ജില്ല)</span
+            >
+            <span class="lang-en"
+              >(Proposed Registered Office: Ernakulam District, Kerala)</span
+            >
+          </p>
+          <h3 class="form-title">APPLICATION FOR ADMISSION AS A MEMBER</h3>
+        </div>
+
+        <!-- Meta Details Box -->
+        <div class="office-box">
+          <table class="office-table">
+            <tr>
+              <td
+                ><strong>Application No.:</strong> ___________________________</td
+              >
+              <td
+                ><strong>Membership No.:</strong> ___________________________</td
+              >
+            </tr>
+            <tr>
+              <td colspan="2"><strong>Date:</strong> ____ / ____ / 20____</td>
+            </tr>
+          </table>
+          <p class="mt-2 mb-0" style="font-size: 13px;">
+            To<br />
+            <strong>The Board of Directors,</strong><br />
+            VidhyaMithra Educational Co-operative Society Ltd.,<br />
+            Ernakulam District.
+          </p>
+        </div>
+
+        <!-- SECTION 1 -->
+        <h4 class="form-section-title">1. PARTICULARS OF THE APPLICANT</h4>
+        <table class="form-table">
+          <tr>
+            <td class="label-cell">1. Full Name (in block letters):</td>
+            <td colspan="3"
+              ><input
+                type="text"
+                class="form-input"
+                placeholder="Enter Full Name"
+              /></td
+            >
+          </tr>
+          <tr>
+            <td class="label-cell">2. Name in Malayalam (if any):</td>
+            <td colspan="3"
+              ><input
+                type="text"
+                class="form-input"
+                placeholder="മലയാളത്തിൽ പേര്"
+              /></td
+            >
+          </tr>
+          <tr>
+            <td class="label-cell">3. Father's Name:</td>
+            <td colspan="3"><input type="text" class="form-input" /></td>
+          </tr>
+          <tr>
+            <td class="label-cell">4. Mother's Name:</td>
+            <td colspan="3"><input type="text" class="form-input" /></td>
+          </tr>
+          <tr>
+            <td class="label-cell">5. Spouse's Name:</td>
+            <td colspan="3"><input type="text" class="form-input" /></td>
+          </tr>
+          <tr>
+            <td class="label-cell">6. Gender:</td>
+            <td colspan="3">
+              <label><input type="checkbox" /> Male</label> &nbsp;&nbsp;&nbsp;
+              <label><input type="checkbox" /> Female</label> &nbsp;&nbsp;&nbsp;
+              <label><input type="checkbox" /> Other</label>
+            </td>
+          </tr>
+          <tr>
+            <td class="label-cell">7. Date of Birth:</td>
+            <td><input type="date" class="form-input" /></td>
+            <td class="label-cell">8. Age:</td>
+            <td
+              ><input
+                type="text"
+                class="form-input"
+                placeholder="Years"
+                style="width: 80px;"
+              /></td
+            >
+          </tr>
+          <tr>
+            <td class="label-cell">9. Nationality:</td>
+            <td><input type="text" class="form-input" value="Indian" /></td>
+            <td class="label-cell">10. Religion:</td>
+            <td><input type="text" class="form-input" /></td>
+          </tr>
+          <tr>
+            <td class="label-cell">11. Occupation / Profession:</td>
+            <td
+              ><input
+                type="text"
+                class="form-input"
+                placeholder="e.g. Teacher, Engineer, Business"
+              /></td
+            >
+            <td class="label-cell">Professional Skill:</td>
+            <td
+              ><input
+                type="text"
+                class="form-input"
+                placeholder="e.g. Legal, IT, Accountancy"
+              /></td
+            >
+          </tr>
+          <tr>
+            <td class="label-cell">12. Educational Qualification:</td>
+            <td><input type="text" class="form-input" /></td>
+            <td class="label-cell">13. Employer / Institution:</td>
+            <td><input type="text" class="form-input" /></td>
+          </tr>
+          <tr>
+            <td class="label-cell">14. Annual Income:</td>
+            <td colspan="3"
+              ><input type="text" class="form-input" placeholder="₹" /></td
+            >
+          </tr>
+        </table>
+
+        <!-- SECTION 2 -->
+        <h4 class="form-section-title">2. IDENTITY DETAILS</h4>
+        <table class="form-table">
+          <tr>
+            <td class="label-cell">ID Type / Document:</td>
+            <td colspan="3">
+              <input
+                type="text"
+                class="form-input"
+                placeholder="PAN Number / Passport / Voter ID / Driving Licence"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td class="label-cell">Government ID Reference:</td>
+            <td colspan="3"
+              ><input
+                type="text"
+                class="form-input"
+                placeholder="[Reference ID / Document Number Redacted as Applicable]"
+              /></td
+            >
+          </tr>
+        </table>
+
+        <!-- SECTION 3 -->
+        <h4 class="form-section-title">3. ADDRESS DETAILS</h4>
+        <table class="form-table">
+          <tr>
+            <td class="label-cell" style="width: 30%;"
+              ><strong>Permanent Address:</strong></td
+            >
+            <td colspan="3"
+              ><textarea
+                class="form-input"
+                rows="2"
+                placeholder="House Name / Number, Street / Locality"
+              ></textarea></td
+            >
+          </tr>
+          <tr>
+            <td class="label-cell">Village / Taluk / District:</td>
+            <td colspan="3"
+              ><input
+                type="text"
+                class="form-input"
+                placeholder="Village, Taluk, Ernakulam"
+              /></td
+            >
+          </tr>
+          <tr>
+            <td class="label-cell">State & PIN Code:</td>
+            <td><input type="text" class="form-input" value="Kerala" /></td>
+            <td class="label-cell">PIN:</td>
+            <td><input type="text" class="form-input" /></td>
+          </tr>
+          <tr>
+            <td class="label-cell"><strong>Communication Address:</strong></td>
+            <td colspan="3"
+              ><textarea
+                class="form-input"
+                rows="2"
+                placeholder="Leave blank if same as permanent address"
+              ></textarea></td
+            >
+          </tr>
+        </table>
+
+        <!-- SECTION 4 -->
+        <h4 class="form-section-title">4. CONTACT DETAILS</h4>
+        <table class="form-table">
+          <tr>
+            <td class="label-cell">Mobile Number 1:</td>
+            <td><input type="tel" class="form-input" /></td>
+            <td class="label-cell">Mobile Number 2:</td>
+            <td><input type="tel" class="form-input" /></td>
+          </tr>
+          <tr>
+            <td class="label-cell">WhatsApp Number:</td>
+            <td><input type="tel" class="form-input" /></td>
+            <td class="label-cell">Email Address:</td>
+            <td><input type="email" class="form-input" /></td>
+          </tr>
+          <tr>
+            <td class="label-cell">Emergency Contact:</td>
+            <td colspan="3"><input type="tel" class="form-input" /></td>
+          </tr>
+        </table>
+
+        <!-- SECTION 5 -->
+        <h4 class="form-section-title">
+          5. FAMILY DETAILS (For Education & Benefit Eligibility)
+        </h4>
+        <table class="form-table border-grid">
+          <tr>
+            <th style="width: 10%;">Sl. No.</th>
+            <th style="width: 45%;">Name of Family Member</th>
+            <th style="width: 25%;">Relationship</th>
+            <th style="width: 20%;">Age</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td><input type="text" class="form-input-clean" /></td>
+            <td><input type="text" class="form-input-clean" /></td>
+            <td><input type="text" class="form-input-clean" /></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td><input type="text" class="form-input-clean" /></td>
+            <td><input type="text" class="form-input-clean" /></td>
+            <td><input type="text" class="form-input-clean" /></td>
+          </tr>
+        </table>
+
+        <!-- SECTION 6 -->
+        <h4 class="form-section-title">6. MEMBERSHIP DETAILS</h4>
+        <table class="form-table">
+          <tr>
+            <td class="label-cell">Type of Membership:</td>
+            <td colspan="3">
+              <label><input type="checkbox" /> Ordinary Member</label> &nbsp;&nbsp;
+              <label><input type="checkbox" /> Associate Member</label> &nbsp;&nbsp;
+              <label><input type="checkbox" /> Educational Member</label>
+            </td>
+          </tr>
+          <tr>
+            <td class="label-cell">Category:</td>
+            <td colspan="3">
+              <label><input type="checkbox" /> Student</label> &nbsp;
+              <label><input type="checkbox" /> Teacher</label> &nbsp;
+              <label><input type="checkbox" /> Parent</label> &nbsp;
+              <label><input type="checkbox" /> Professional</label> &nbsp;
+              <label><input type="checkbox" /> Entrepreneur</label>
+            </td>
+          </tr>
+        </table>
+
+        <!-- SECTION 7 -->
+        <h4 class="form-section-title">7. SHARE SUBSCRIPTION DETAILS</h4>
+        <table class="form-table">
+          <tr>
+            <td class="label-cell">Number of shares applied for:</td>
+            <td
+              ><input
+                type="number"
+                id="inputShares"
+                class="form-input"
+                min="1"
+                max="100"
+                value="10"
+                style="width: 100px; font-weight: bold;"
+              /></td
+            >
+          </tr>
+          <tr>
+            <td class="label-cell">Face value per share:</td>
+            <td><strong>₹2,500/-</strong></td>
+          </tr>
+          <tr>
+            <td class="label-cell">Total share value:</td>
+            <td
+              ><strong id="displayTotal" style="color: var(--nic-red);"
+                >₹25,000/-</strong
+              ></td
+            >
+          </tr>
+          <tr>
+            <td class="label-cell">Entrance fee & other charges:</td>
+            <td>₹ __________________</td>
+          </tr>
+        </table>
+
+        <!-- SECTION 8 -->
+        <h4 class="form-section-title">8. PAYMENT DETAILS</h4>
+        <table class="form-table">
+          <tr>
+            <td class="label-cell">Mode of Payment:</td>
+            <td colspan="3">
+              <label><input type="checkbox" /> Cash</label> &nbsp;&nbsp;
+              <label><input type="checkbox" /> Bank Transfer</label> &nbsp;&nbsp;
+              <label><input type="checkbox" /> UPI</label> &nbsp;&nbsp;
+              <label><input type="checkbox" /> Cheque / DD</label>
+            </td>
+          </tr>
+          <tr>
+            <td class="label-cell">Transaction / UTR Number:</td>
+            <td><input type="text" class="form-input" /></td>
+            <td class="label-cell">Bank & Branch:</td>
+            <td><input type="text" class="form-input" /></td>
+          </tr>
+        </table>
+
+        <!-- SECTION 9 & 10 -->
+        <h4 class="form-section-title">
+          9 & 10. EDUCATIONAL INTERESTS & SOCIETY PARTICIPATION
+        </h4>
+        <p style="font-size: 13px; margin: 5px 0;">
+          I am interested in contributing to / utilizing: Coaching, Digital
+          Education, Skill Development, Workshops, Administration, Tech
+          Development, and Student Support Programmes.
+        </p>
+
+        <!-- SECTION 11 -->
+        <h4 class="form-section-title">11. NOMINATION DETAILS</h4>
+        <table class="form-table">
+          <tr>
+            <td class="label-cell">Name of Nominee:</td>
+            <td><input type="text" class="form-input" /></td>
+            <td class="label-cell">Relationship:</td>
+            <td><input type="text" class="form-input" /></td>
+          </tr>
+          <tr>
+            <td class="label-cell">Date of Birth:</td>
+            <td><input type="date" class="form-input" /></td>
+            <td class="label-cell">Entitlement Share:</td>
+            <td><input type="text" class="form-input" value="100%" /></td>
+          </tr>
+        </table>
+
+        <!-- SECTION 12 -->
+        <h4 class="form-section-title">
+          12. BANK ACCOUNT DETAILS (For Dividend Payouts)
+        </h4>
+        <table class="form-table">
+          <tr>
+            <td class="label-cell">Account Holder Name:</td>
+            <td><input type="text" class="form-input" /></td>
+            <td class="label-cell">Bank Name & Branch:</td>
+            <td><input type="text" class="form-input" /></td>
+          </tr>
+          <tr>
+            <td class="label-cell">Account Number:</td>
+            <td><input type="text" class="form-input" /></td>
+            <td class="label-cell">IFSC Code & UPI ID:</td>
+            <td><input type="text" class="form-input" /></td>
+          </tr>
+        </table>
+
+        <!-- SECTION 13 -->
+        <h4 class="form-section-title">13. DECLARATION BY THE APPLICANT</h4>
+        <div class="declaration-text">
+          <p>
+            1. I have completed eighteen years of age and am competent to enter
+            into contracts.<br />
+            2. I agree to abide by the constitution, bylaws, rules, and resolutions
+            of the Society.<br />
+            3. The information furnished by me is true and correct, and I undertake
+            to pay all dues.
+          </p>
+        </div>
+
+        <div class="signature-section">
+          <div class="sig-box">
+            <p>___________________________________</p>
+            <p><strong>Signature of Applicant</strong></p>
+          </div>
+          <div class="sig-box">
+            <p>Date: ____ / ____ / 20____</p>
+            <p>Place: ____________________</p>
+          </div>
+        </div>
+
+        <!-- SECTION 14 & 15 -->
+        <h4 class="form-section-title" style="margin-top: 35px;">
+          14 & 15. FOR OFFICE USE ONLY
+        </h4>
+        <table class="form-table office-footer-table">
+          <tr>
+            <td><strong>Application No:</strong> _______________</td>
+            <td><strong>Date of Receipt:</strong> _______________</td>
+            <td><strong>Shares Allotted:</strong> _______________</td>
+          </tr>
+          <tr>
+            <td><strong>Membership No:</strong> _______________</td>
+            <td><strong>Resolution No:</strong> _______________</td>
+            <td><strong>Admission Date:</strong> _______________</td>
+          </tr>
+        </table>
+
+        <div class="signature-section" style="margin-top: 30px;">
+          <div class="sig-box">
+            <p>___________________________________</p>
+            <p><strong>Secretary</strong></p>
+          </div>
+          <div class="sig-box">
+            <p>___________________________________</p>
+            <p><strong>President / Board Member</strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Button -->
+      <div
+        class="content-box no-print text-center"
+        style="background-color: #f4f8fc; padding: 20px;"
+      >
+        <button id="printBtn" class="print-btn">
+          <span>🖨️ Print Schedule I Application Form</span>
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <div class="no-print">
+    <Footer />
+  </div>
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 20px;
+  }
+  .content-box {
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  .title-box-custom {
+    background-color: #e6f0fa;
+    border-top: 4px solid var(--nic-blue);
+    padding: 15px;
+  }
+
+  .application-sheet {
+    border: 2px solid var(--nic-blue);
+    padding: 30px;
+    background: #ffffff;
+  }
+  .form-header {
+    border-bottom: 2px solid var(--nic-red);
+    padding-bottom: 12px;
+    margin-bottom: 15px;
+  }
+  .schedule-label {
+    font-weight: bold;
+    font-size: 15px;
+    color: var(--nic-blue);
+    margin: 0 0 5px 0;
+    letter-spacing: 1px;
+  }
+  .society-name {
+    color: var(--nic-red);
+    font-size: 18px;
+    margin: 3px 0;
+    font-weight: bold;
+  }
+  .sub-text {
+    font-size: 12px;
+    color: #555;
+    margin: 2px 0;
+  }
+  .form-title {
+    color: var(--nic-blue);
+    font-size: 15px;
+    margin: 5px 0 0 0;
+    font-family: "Times New Roman", serif;
+  }
+
+  .office-box {
+    border: 1px dashed #777;
+    padding: 12px;
+    margin-bottom: 15px;
+    background: #fafafa;
+    font-size: 13px;
+  }
+  .office-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .office-table td {
+    padding: 3px 0;
+  }
+
+  .form-section-title {
+    background-color: var(--nic-blue);
+    color: white;
+    padding: 5px 10px;
+    font-size: 13px;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+  .form-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  .form-table td {
+    padding: 4px 6px;
+    vertical-align: middle;
+  }
+  .label-cell {
+    font-weight: bold;
+    color: #333;
+    width: 32%;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 13px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  .form-input:focus {
+    border-color: var(--nic-blue);
+  }
+
+  .border-grid th,
+  .border-grid td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    text-align: center;
+  }
+  .form-input-clean {
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 13px;
+    outline: none;
+    background: transparent;
+  }
+
+  .declaration-text {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 15px;
+  }
+  .signature-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+  .sig-box {
+    text-align: center;
+    font-size: 12px;
+    width: 45%;
+  }
+  .office-footer-table td {
+    padding: 8px 4px;
+    font-size: 12.5px;
+  }
+
+  .print-btn {
+    background-color: var(--nic-blue);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s;
+  }
+  .print-btn:hover {
+    background-color: var(--nic-red);
+  }
+
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+    body {
+      background-color: #ffffff;
+      padding: 0;
+    }
+    .content-box {
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      margin: 0;
+    }
+    .application-sheet {
+      border: 1px solid #000;
+      padding: 10px;
+      width: 100%;
+    }
+    .form-section-title {
+      background-color: #ddd !important;
+      color: #000 !important;
+      -webkit-print-color-adjust: exact;
+    }
+    .form-input {
+      border: none;
+      border-bottom: 1px solid #000;
+      border-radius: 0;
+      padding: 2px;
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const inputShares = document.getElementById(
+      "inputShares",
+    ) as HTMLInputElement;
+    const displayTotal = document.getElementById("displayTotal");
+    const printBtn = document.getElementById("printBtn");
+
+    const faceValue = 2500;
+
+    function updateAmount() {
+      let count = parseInt(inputShares.value);
+      if (isNaN(count) || count < 1) count = 1;
+      if (count > 100) count = 100;
+
+      const total = count * faceValue;
+      if (displayTotal) {
+        displayTotal.innerText = "₹" + total.toLocaleString("en-IN") + "/-";
+      }
+    }
+
+    if (inputShares) {
+      inputShares.addEventListener("input", updateAmount);
+    }
+
+    if (printBtn) {
+      printBtn.addEventListener("click", () => {
+        window.print();
+      });
+    }
+  });
+</script>

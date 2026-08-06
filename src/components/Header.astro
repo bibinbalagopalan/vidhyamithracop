@@ -1,0 +1,158 @@
+---
+// src/components/Header.astro
+---
+
+<header>
+  <!-- Top Accessibility Bar -->
+  <div class="top-bar">
+    <div class="left-links">
+      <span class="lang-en">Skip to Main Content</span>
+      <span class="lang-ml ml-text">പ്രധാന ഉള്ളടക്കത്തിലേക്ക് പോകുക</span>
+    </div>
+    <div class="top-bar-links">
+      <span>A-</span>
+      <span>A</span>
+      <span>A+</span> |
+      <button id="btn-en" class="lang-btn">English</button> |
+      <button id="btn-ml" class="lang-btn ml-text font-bold">മലയാളം</button>
+    </div>
+  </div>
+
+  <!-- Main Header Section -->
+
+  <div class="title-box">
+    <!-- Malayalam Titles (Shows by default) -->
+    <div class="lang-ml">
+      <h1 class="main-title ml-text" style="color: var(--nic-red);">
+        വിദ്യാമിത്ര പ്രൊപ്പോസ്ഡ് കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റി ലിമിറ്റഡ്
+      </h1>
+      <p class="sub-title ml-text">
+        (1969-ലെ കേരള കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റീസ് ആക്ട് പ്രകാരം രജിസ്റ്റർ ചെയ്യാൻ
+        നിർദ്ദേശിച്ചിട്ടുള്ളത്)
+      </p>
+    </div>
+
+    <!-- English Titles (Hidden by default) -->
+    <div class="lang-en">
+      <h1
+        class="main-title"
+        style="color: var(--nic-blue); font-family: 'Times New Roman', serif;"
+      >
+        VIDHYAMITHRA PROPOSED CO-OPERATIVE SOCIETY LTD.
+      </h1>
+      <p class="sub-title">
+        (To be registered under the Kerala Co-operative Societies Act, 1969)
+      </p>
+    </div>
+  </div>
+</header>
+
+<style>
+  /* Keep your existing Header CSS here, just update the buttons */
+  .top-bar {
+    background-color: #222;
+    color: #fff;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 15px;
+  }
+  .lang-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    padding: 0;
+  }
+  .lang-btn:hover {
+    color: var(--govt-yellow);
+    text-decoration: underline;
+  }
+  .font-bold {
+    font-weight: bold;
+    color: var(--govt-yellow);
+  }
+
+  .header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: url("https://www.transparenttextures.com/patterns/cubes.png")
+      #ffffff;
+    border-bottom: 4px solid var(--nic-red);
+  }
+  .logo-box {
+    width: 90px;
+    height: 90px;
+    border: 2px solid var(--nic-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    text-align: center;
+    color: var(--nic-blue);
+    font-weight: bold;
+    background-color: #fff;
+    flex-shrink: 0;
+  }
+  .title-box {
+    text-align: center;
+    flex-grow: 1;
+    padding: 0 15px;
+  }
+  .main-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  .sub-title {
+    color: #555;
+    font-size: 14px;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .header-main {
+      flex-direction: column;
+      text-align: center;
+    }
+    .logo-box {
+      margin: 10px 0;
+    }
+    .main-title {
+      font-size: 22px;
+    }
+  }
+</style>
+
+<script>
+  // Client-side JavaScript to handle Language Toggling
+  const htmlElement = document.documentElement;
+  const btnEn = document.getElementById("btn-en");
+  const btnMl = document.getElementById("btn-ml");
+
+  // Check LocalStorage for saved preference, default to 'ml'
+  const savedLang = localStorage.getItem("siteLang") || "ml";
+  setLanguage(savedLang);
+
+  btnEn.addEventListener("click", () => setLanguage("en"));
+  btnMl.addEventListener("click", () => setLanguage("ml"));
+
+  function setLanguage(lang) {
+    htmlElement.setAttribute("lang", lang);
+    localStorage.setItem("siteLang", lang); // Save choice
+
+    // Highlight active button
+    if (lang === "en") {
+      btnEn.classList.add("font-bold");
+      btnMl.classList.remove("font-bold");
+    } else {
+      btnMl.classList.add("font-bold");
+      btnEn.classList.remove("font-bold");
+    }
+  }
+</script>

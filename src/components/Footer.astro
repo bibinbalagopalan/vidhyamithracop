@@ -1,0 +1,108 @@
+---
+// src/components/Footer.astro
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <!-- Footer Links -->
+  <div class="footer-links">
+    <a href="#">
+      <span class="lang-ml ml-text">വെബ്സൈറ്റ് പോളിസികൾ</span>
+      <span class="lang-en">Website Policies</span>
+    </a> |
+    <a href="#">
+      <span class="lang-ml ml-text">സഹായം</span>
+      <span class="lang-en">Help</span>
+    </a> |
+    <a href="#">
+      <span class="lang-ml ml-text">ബന്ധപ്പെടുക</span>
+      <span class="lang-en">Contact Us</span>
+    </a> |
+    <a href="#">
+      <span class="lang-ml ml-text">അഭിപ്രായങ്ങൾ</span>
+      <span class="lang-en">Feedback</span>
+    </a>
+  </div>
+
+  <!-- Ownership Text -->
+  <div class="footer-ownership">
+    <p>
+      <span class="lang-ml ml-text"
+        >ഉള്ളടക്കം ഉടമസ്ഥതയിലുള്ളതും പരിപാലിക്കുന്നതും <strong
+          >വിദ്യാമിത്ര പ്രൊപ്പോസ്ഡ് കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റി ലിമിറ്റഡ്</strong
+        ></span
+      >
+      <span class="lang-en"
+        >Content Owned, Maintained and Updated by <strong
+          >VidhyaMithra Proposed Co-operative Society Ltd.</strong
+        ></span
+      >
+    </p>
+    <p class="sub-text">
+      <span class="lang-ml ml-text"
+        >(1969-ലെ കേരള കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റീസ് ആക്ട് പ്രകാരം രജിസ്റ്റർ
+        ചെയ്യാൻ നിർദ്ദേശിച്ചിട്ടുള്ളത്)</span
+      >
+      <span class="lang-en"
+        >(To be registered under the Kerala Co-operative Societies Act, 1969)</span
+      >
+    </p>
+  </div>
+
+  <!-- Copyright -->
+  <div class="footer-copyright">
+    <p>© {currentYear} All Rights Reserved.</p>
+  </div>
+</footer>
+
+<style>
+  /* --- FOOTER STYLES --- */
+  .footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 25px 20px 15px 20px;
+    font-size: 13px;
+    border-top: 4px solid var(--nic-blue);
+    margin-top: 20px;
+  }
+
+  .footer-links {
+    margin-bottom: 15px;
+  }
+
+  .footer-links a {
+    color: var(--govt-yellow);
+    text-decoration: none;
+    margin: 0 8px;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .footer-ownership p {
+    margin: 5px 0;
+    line-height: 1.5;
+  }
+
+  .footer-ownership strong {
+    color: #fff;
+  }
+
+  .sub-text {
+    font-size: 12px;
+    color: #999;
+  }
+
+  .footer-copyright {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #444;
+    font-size: 12px;
+    color: #777;
+  }
+</style>

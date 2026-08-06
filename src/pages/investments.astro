@@ -1,0 +1,346 @@
+---
+// src/pages/investments.astro
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Investment Plans - VidhyaMithra">
+  <Header />
+  <Navigation />
+
+  <div class="content-wrapper" style="justify-content: center;">
+    <main class="main-content" style="flex: 1; max-width: 1000px; width: 100%;">
+      <!-- Page Title -->
+      <div class="content-box title-box-custom">
+        <h2 class="text-center m-0">
+          <span class="lang-ml ml-text" style="color: var(--nic-blue);"
+            >നിക്ഷേപ പദ്ധതികൾ</span
+          >
+          <span class="lang-en" style="color: var(--nic-blue);"
+            >Investment Plans & Schemes</span
+          >
+        </h2>
+      </div>
+
+      <!-- Introduction -->
+      <div class="content-box">
+        <p
+          class="lang-ml ml-text"
+          style="font-size: 16px; line-height: 1.8; text-align: justify; margin-top: 0;"
+        >
+          വിദ്യാമിത്ര കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റി അംഗങ്ങൾക്കായി മികച്ച സാമ്പത്തിക
+          നേട്ടങ്ങൾ ഉറപ്പാക്കുന്ന വിവിധ നിക്ഷേപ പദ്ധതികൾ അവതരിപ്പിക്കുന്നു.
+          സുരക്ഷിതമായ ആസ്തികളുടെ പിൻബലമുള്ള ഈ പദ്ധതികളിലൂടെ മികച്ച പലിശയും
+          ലാഭവിഹിതവും നിങ്ങൾക്ക് സ്വന്തമാക്കാം.
+        </p>
+        <p
+          class="lang-en"
+          style="font-size: 16px; line-height: 1.8; text-align: justify; margin-top: 0;"
+        >
+          VidhyaMithra Co-operative Society introduces a range of highly
+          rewarding investment schemes exclusively for its members. Backed by
+          secure physical and digital assets, our plans are designed to provide
+          you with maximum financial growth and stability.
+        </p>
+      </div>
+
+      <!-- Share Capital Investment -->
+      <div class="content-box investment-card">
+        <div class="card-header">
+          <h3 style="margin: 0;">
+            <span class="lang-ml ml-text"
+              >1. ഓഹരി നിക്ഷേപം (Share Capital Investment)</span
+            >
+            <span class="lang-en">1. Share Capital Investment</span>
+          </h3>
+        </div>
+        <div class="card-body">
+          <p class="lang-ml ml-text" style="line-height: 1.6;">
+            സൊസൈറ്റിയുടെ പ്രധാന മൂലധന നിക്ഷേപം. ഓഹരി ഉടമകൾക്ക് ഓരോ പാദത്തിലും (4
+            മാസത്തിലൊരിക്കൽ) ലാഭവിഹിതവും, കൂടാതെ വിദ്യാഭ്യാസ സ്ഥാപനങ്ങളിൽ
+            പ്രത്യേക ഫീസ് ഇളവുകളും ലഭിക്കുന്നു.
+          </p>
+          <p class="lang-en" style="line-height: 1.6;">
+            The primary equity investment of the society. Shareholders are
+            entitled to tri-annual dividends (every 4 months) along with
+            exclusive fee concessions at our educational institutions.
+          </p>
+
+          <table class="table-govt mt-3">
+            <tbody>
+              <tr>
+                <td style="width: 50%; font-weight: bold;">
+                  <span class="lang-ml ml-text">ഒരു ഓഹരിയുടെ മുഖവില</span>
+                  <span class="lang-en">Face Value per Share</span>
+                </td>
+                <td
+                  style="color: var(--nic-red); font-weight: bold; font-size: 18px;"
+                  >₹2,500/-</td
+                >
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">
+                  <span class="lang-ml ml-text">കുറഞ്ഞ നിക്ഷേപം (1 ഓഹരി)</span>
+                  <span class="lang-en">Minimum Investment (1 Share)</span>
+                </td>
+                <td>₹2,500/-</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">
+                  <span class="lang-ml ml-text"
+                    >പരമാവധി നിക്ഷേപം (100 ഓഹരികൾ)</span
+                  >
+                  <span class="lang-en">Maximum Investment (100 Shares)</span>
+                </td>
+                <td>₹2,50,000/-</td>
+              </tr>
+              <tr>
+                <td style="font-weight: bold;">
+                  <span class="lang-ml ml-text">യോഗ്യത</span>
+                  <span class="lang-en">Eligibility</span>
+                </td>
+                <td>
+                  <span class="lang-ml ml-text"
+                    >18 വയസ്സ് പൂർത്തിയായ കേരളത്തിലെ സ്ഥിരതാമസക്കാർ.</span
+                  >
+                  <span class="lang-en"
+                    >Residents of Kerala aged 18 and above.</span
+                  >
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Fixed Deposits -->
+      <div class="content-box investment-card">
+        <div class="card-header">
+          <h3 style="margin: 0;">
+            <span class="lang-ml ml-text"
+              >2. സ്ഥിര നിക്ഷേപങ്ങൾ (Fixed Deposits - FD)</span
+            >
+            <span class="lang-en">2. Fixed Deposits (FD)</span>
+          </h3>
+        </div>
+        <div class="card-body">
+          <p class="lang-ml ml-text" style="line-height: 1.6;">
+            നിങ്ങളുടെ സമ്പാദ്യത്തിന് ഉയർന്ന സുരക്ഷിതത്വവും മികച്ച പലിശയും
+            ഉറപ്പാക്കുന്ന സ്ഥിര നിക്ഷേപ പദ്ധതികൾ. മുതിർന്ന പൗരന്മാർക്ക് സാധാരണ
+            പലിശ നിരക്കിനേക്കാൾ 0.5% അധിക പലിശ ലഭിക്കുന്നതാണ്.
+          </p>
+          <p class="lang-en" style="line-height: 1.6;">
+            Secure your savings and earn high returns with our Fixed Deposit
+            schemes. Senior citizens are eligible for an additional 0.5%
+            interest rate over the standard rates.
+          </p>
+
+          <ul class="benefits-list mt-3">
+            <li>
+              <span class="lang-ml ml-text"
+                >കാലാവധി: 1 വർഷം മുതൽ 5 വർഷം വരെ.</span
+              >
+              <span class="lang-en">Tenure: 1 Year to 5 Years.</span>
+            </li>
+            <li>
+              <span class="lang-ml ml-text"
+                >നിക്ഷേപത്തിന്മേൽ വായ്പാ സൗകര്യം (OD Facility) ലഭ്യമാണ്.</span
+              >
+              <span class="lang-en"
+                >Overdraft (OD) facility available against deposits.</span
+              >
+            </li>
+            <li>
+              <span class="lang-ml ml-text">കുറഞ്ഞ നിക്ഷേപ തുക: ₹10,000/-</span>
+              <span class="lang-en">Minimum Deposit Amount: ₹10,000/-</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Recurring Deposits -->
+      <div class="content-box investment-card">
+        <div class="card-header">
+          <h3 style="margin: 0;">
+            <span class="lang-ml ml-text"
+              >3. റിക്കറിംഗ് ഡെപ്പോസിറ്റ് (Recurring Deposits - RD)</span
+            >
+            <span class="lang-en">3. Recurring Deposits (RD)</span>
+          </h3>
+        </div>
+        <div class="card-body">
+          <p class="lang-ml ml-text" style="line-height: 1.6;">
+            മാസാമാസം ചെറിയ തുകകൾ നിക്ഷേപിച്ച് ഭാവിയിലെ വലിയ സാമ്പത്തിക ആവശ്യങ്ങൾ
+            നിറവേറ്റാൻ സഹായിക്കുന്ന പദ്ധതി. വിദ്യാർത്ഥികളുടെ ഉന്നത വിദ്യാഭ്യാസ
+            ഫണ്ടായി ഇത് പ്രയോജനപ്പെടുത്താം.
+          </p>
+          <p class="lang-en" style="line-height: 1.6;">
+            Build a substantial corpus by saving small amounts monthly. This
+            scheme is ideal for planning your children's higher education funds.
+          </p>
+
+          <ul class="benefits-list mt-3">
+            <li>
+              <span class="lang-ml ml-text">കുറഞ്ഞ പ്രതിമാസ അടവ്: ₹500/-</span>
+              <span class="lang-en">Minimum Monthly Installment: ₹500/-</span>
+            </li>
+            <li>
+              <span class="lang-ml ml-text"
+                >കാലാവധി: 12 മാസം മുതൽ 60 മാസം വരെ.</span
+              >
+              <span class="lang-en">Tenure: 12 Months to 60 Months.</span>
+            </li>
+            <li>
+              <span class="lang-ml ml-text"
+                >കാലാവധി പൂർത്തിയാകുമ്പോൾ മികച്ച പലിശയോടെ തുക തിരികെ
+                ലഭിക്കുന്നു.</span
+              >
+              <span class="lang-en"
+                >Lump sum return with attractive interest upon maturity.</span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Call to Action -->
+      <div
+        class="content-box"
+        style="background-color: #fff9e6; border: 2px dashed var(--govt-yellow); text-align: center; padding: 30px;"
+      >
+        <h3 style="color: var(--nic-red); margin-top: 0;">
+          <span class="lang-ml ml-text">നിക്ഷേപിക്കാൻ തയ്യാറാണോ?</span>
+          <span class="lang-en">Ready to Invest?</span>
+        </h3>
+        <p class="mb-4">
+          <span class="lang-ml ml-text"
+            >ഓഹരി നിക്ഷേപ ഫോം ഡൗൺലോഡ് ചെയ്ത് പൂരിപ്പിച്ച് സൊസൈറ്റി ഓഫീസിൽ
+            സമർപ്പിക്കുക.</span
+          >
+          <span class="lang-en"
+            >Download the Share Application Form, fill it out, and submit it at
+            the Society Office.</span
+          >
+        </p>
+
+        <button class="download-btn">
+          <span class="lang-ml ml-text">അപേക്ഷാ ഫോം ഡൗൺലോഡ് ചെയ്യുക (PDF)</span>
+          <span class="lang-en">Download Application Form (PDF)</span>
+        </button>
+
+        <p style="font-size: 13px; color: #666; margin-top: 15px;">
+          <span class="lang-ml ml-text"
+            >കൂടുതൽ വിവരങ്ങൾക്ക്: info@vidhyamithra.com | പ്രൊമോട്ടറെ
+            ബന്ധപ്പെടുക</span
+          >
+          <span class="lang-en"
+            >For more information: info@vidhyamithra.com | Contact Promoter</span
+          >
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 20px;
+  }
+  .content-box {
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  .title-box-custom {
+    background-color: #e6f0fa;
+    border-top: 4px solid var(--nic-blue);
+    padding: 15px;
+  }
+
+  /* Investment Cards Styling */
+  .investment-card {
+    padding: 0;
+    overflow: hidden;
+  }
+  .card-header {
+    background-color: var(--nic-blue);
+    color: #fff;
+    padding: 15px 20px;
+    border-bottom: 3px solid var(--govt-yellow);
+  }
+  .card-body {
+    padding: 20px;
+  }
+
+  /* Govt Table (Reused and slightly tweaked) */
+  .table-govt {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+  }
+  .table-govt td {
+    border: 1px solid var(--border-color);
+    padding: 12px 15px;
+    background-color: #fcfcfc;
+  }
+  .table-govt tr:nth-child(even) td {
+    background-color: #f4f8fc;
+  }
+
+  /* Benefits List */
+  .benefits-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  .benefits-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+  .benefits-list li::before {
+    content: "►";
+    position: absolute;
+    left: 0;
+    color: var(--nic-red);
+    font-size: 12px;
+    top: 3px;
+  }
+
+  /* Buttons */
+  .download-btn {
+    background-color: var(--nic-red);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transition:
+      background-color 0.2s,
+      transform 0.1s;
+  }
+  .download-btn:hover {
+    background-color: #900000;
+  }
+  .download-btn:active {
+    transform: translateY(2px);
+  }
+  .mt-3 {
+    margin-top: 15px;
+  }
+  .mb-4 {
+    margin-bottom: 20px;
+  }
+</style>

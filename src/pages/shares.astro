@@ -1,0 +1,256 @@
+---
+// src/pages/shares.astro
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Shareholders & Capital - VidhyaMithra">
+  <Header />
+  <Navigation />
+
+  <div class="content-wrapper" style="justify-content: center;">
+    <main class="main-content" style="flex: 1; max-width: 1000px; width: 100%;">
+      <!-- Page Title -->
+      <div class="content-box title-box-custom">
+        <h2 class="text-center m-0">
+          <span class="lang-ml ml-text" style="color: var(--nic-blue);"
+            >ഓഹരി ഉടമകളും മൂലധന വിവരങ്ങളും</span
+          >
+          <span class="lang-en" style="color: var(--nic-blue);"
+            >Shareholders & Capital Structure</span
+          >
+        </h2>
+      </div>
+
+      <!-- Introduction -->
+      <div class="content-box">
+        <h3 class="section-heading">
+          <span class="lang-ml ml-text">പ്രൊമോട്ടർ ഓഹരി ഉടമകളുടെ പട്ടിക</span>
+          <span class="lang-en">Founding Promoter Shareholders</span>
+        </h3>
+
+        <p
+          class="lang-ml ml-text"
+          style="font-size: 15px; line-height: 1.8; text-align: justify;"
+        >
+          വിദ്യാമിത്ര പ്രൊപ്പോസ്ഡ് കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റിയുടെ പ്രാരംഭ
+          പ്രവർത്തനങ്ങൾക്കും രജിസ്ട്രേഷൻ നടപടികൾക്കും നേതൃത്വം നൽകുന്ന
+          പ്രൊമോട്ടർ ഓഹരി ഉടമകളുടെ വിവരങ്ങൾ താഴെ നൽകുന്നു. നിയമാവലിയിലെ
+          വ്യവസ്ഥകൾ പ്രകാരം (ഓഹരി ഒന്നിന് മുഖവില ₹2,500) ഓരോ അംഗവും
+          എടുത്തിട്ടുള്ള ഓഹരികളുടെ എണ്ണവും മൂലധന വിഹിതവും ഇതിൽ വ്യക്തമാക്കുന്നു.
+        </p>
+        <p
+          class="lang-en"
+          style="font-size: 15px; line-height: 1.8; text-align: justify;"
+        >
+          Below is the official list of founding promoter shareholders steering
+          the establishment and registration of VidhyaMithra Proposed
+          Co-operative Society. In accordance with our bylaws (face value of
+          ₹2,500 per share), their respective share allocations and capital
+          contributions are detailed below.
+        </p>
+
+        <!-- Shareholders Table -->
+        <table class="table-govt mt-4">
+          <thead>
+            <tr style="background-color: var(--nic-blue); color: white;">
+              <th style="width: 10%;">
+                <span class="lang-ml ml-text">നമ്പർ</span>
+                <span class="lang-en">Sl No.</span>
+              </th>
+              <th style="width: 45%;">
+                <span class="lang-ml ml-text">ഓഹരി ഉടമയുടെ പേര്</span>
+                <span class="lang-en">Name of Shareholder</span>
+              </th>
+              <th style="width: 20%; text-align: center;">
+                <span class="lang-ml ml-text">ഓഹരികളുടെ എണ്ണം</span>
+                <span class="lang-en">Shares Held</span>
+              </th>
+              <th style="width: 25%; text-align: right;">
+                <span class="lang-ml ml-text">നിക്ഷേപ തുക (₹)</span>
+                <span class="lang-en">Total Value (₹)</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td><strong>Rejimon P</strong></td>
+              <td style="text-align: center; font-weight: bold;">100</td>
+              <td style="text-align: right;">₹2,50,000</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td><strong>Dr. Bibin Menon (CPA)</strong></td>
+              <td style="text-align: center; font-weight: bold;">100</td>
+              <td style="text-align: right;">₹2,50,000</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td><strong>Dr. Arunima Ramakrishnan</strong></td>
+              <td style="text-align: center; font-weight: bold;">40</td>
+              <td style="text-align: right;">₹1,00,000</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><strong>Dr. Meghna Mohan</strong></td>
+              <td style="text-align: center; font-weight: bold;">40</td>
+              <td style="text-align: right;">₹1,00,000</td>
+            </tr>
+            <tr style="background-color: #f4f8fc; font-weight: bold;">
+              <td colspan="2">
+                <span class="lang-ml ml-text"
+                  >സബ്‌ടോട്ടൽ: പ്രൊമോട്ടർ ഓഹരികൾ (Subtotal: Promoters)</span
+                >
+                <span class="lang-en">Subtotal: Promoter Shares</span>
+              </td>
+              <td style="text-align: center;">280</td>
+              <td style="text-align: right;">₹7,00,000</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                <span class="lang-ml ml-text"
+                  >മറ്റ് മൈനർ ഓഹരി ഉടമകൾ (ഇതര അംഗങ്ങൾ)</span
+                >
+                <span class="lang-en"
+                  >Other Minor Shareholders (General Members Pool)</span
+                >
+              </td>
+              <td style="text-align: center; font-weight: bold;">2,840</td>
+              <td style="text-align: right;">₹71,00,000</td>
+            </tr>
+            <!-- Summary Row -->
+            <tr
+              style="background-color: #e8f5e9; font-weight: bold; font-size: 15px;"
+            >
+              <td colspan="2">
+                <span class="lang-ml ml-text"
+                  >ആകെ സമാഹരിച്ച ഓഹരി മൂലധനം (Total Paid-up Capital)</span
+                >
+                <span class="lang-en">Total Paid-up Capital</span>
+              </td>
+              <td style="text-align: center; color: #2e7d32;">3,120</td>
+              <td style="text-align: right; color: #2e7d32;">₹78,00,000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Capital Structure Compliance Box -->
+      <div class="content-box benefits-box">
+        <h3
+          class="section-heading"
+          style="border-bottom: none; margin-bottom: 10px;"
+        >
+          <span class="lang-ml ml-text"
+            >ഓഹരി പരിധിയും നിയമപരമായ സുതാര്യതയും</span
+          >
+          <span class="lang-en">Share Ceiling & Legal Compliance</span>
+        </h3>
+
+        <p
+          class="lang-ml ml-text"
+          style="font-size: 15px; line-height: 1.8; text-align: justify; margin-top: 0;"
+        >
+          സൊസൈറ്റിയുടെ നിയമാവലി പ്രകാരം ഒരാൾക്ക് കൈവശം വെക്കാവുന്ന പരമാവധി
+          ഓഹരികളുടെ എണ്ണം <strong>100</strong> ആണ് (മുഖവില ₹2,500). പ്രൊമോട്ടർമാരുടെയും
+          മറ്റ് മൈനർ ഓഹരി ഉടമകളുടെയും പിൻബലത്തോടെ സൊസൈറ്റിയുടെ ആകെ മൂലധനം 78 ലക്ഷം
+          രൂപയായി ഉയർന്നുകഴിഞ്ഞു. പുതിയ ഓഹരികൾക്കായി യോഗ്യരായ മറ്റ് വ്യക്തികൾക്ക്
+          തുടർന്നും അപേക്ഷിക്കാവുന്നതാണ്.
+        </p>
+        <p
+          class="lang-en"
+          style="font-size: 15px; line-height: 1.8; text-align: justify; margin-top: 0;"
+        >
+          In strict compliance with our bylaws, the maximum shareholding limit
+          per individual is capped at <strong>100 shares</strong> (₹2,500 per share).
+          With robust participation from both our founding promoters and diverse minor
+          shareholders, the total paid-up capital has scaled to ₹78 Lakhs. New share
+          applications remain open for eligible members from the general public.
+        </p>
+
+        <div class="text-center mt-4">
+          <a href="/membership-form" class="cta-button">
+            <span class="lang-ml ml-text"
+              >പുതിയ ഓഹരിക്ക് അപേക്ഷിക്കുക (Schedule I Form)</span
+            >
+            <span class="lang-en">Apply for New Shares (Schedule I Form)</span>
+          </a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 20px;
+  }
+  .content-box {
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  .title-box-custom {
+    background-color: #e6f0fa;
+    border-top: 4px solid var(--nic-blue);
+    padding: 15px;
+  }
+  .section-heading {
+    color: var(--nic-blue);
+    border-bottom: 2px solid var(--nic-red);
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .benefits-box {
+    border-left: 5px solid var(--nic-red);
+  }
+
+  .table-govt {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+  }
+  .table-govt th,
+  .table-govt td {
+    border: 1px solid var(--border-color);
+    padding: 12px 15px;
+  }
+  .table-govt tr:nth-child(even) td {
+    background-color: #f9f9f9;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+  .mt-4 {
+    margin-top: 20px;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: var(--nic-blue);
+    color: white;
+    padding: 12px 25px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+  }
+  .cta-button:hover {
+    background-color: var(--nic-red);
+  }
+</style>

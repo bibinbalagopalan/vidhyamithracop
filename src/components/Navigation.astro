@@ -1,0 +1,175 @@
+---
+// src/components/Navigation.astro
+---
+
+<div>
+  <!-- Mobile Menu Header (Only visible on small screens) -->
+  <div class="mobile-nav-header">
+    <span class="lang-ml ml-text" style="font-size: 18px; font-weight: bold;"
+      >മെനു</span
+    >
+    <span class="lang-en" style="font-size: 18px; font-weight: bold;">Menu</span
+    >
+    <button id="mobile-menu-toggle" class="hamburger">☰</button>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav class="navbar" id="nav-menu">
+    <ul>
+      <li>
+        <a href="/">
+          <span class="lang-ml ml-text">മുഖപുടം</span>
+          <span class="lang-en">Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="about">
+          <span class="lang-ml ml-text">ഞങ്ങളെക്കുറിച്ച്</span>
+          <span class="lang-en">About Us</span>
+        </a>
+      </li>
+      <li>
+        <a href="projects">
+          <span class="lang-ml ml-text">പദ്ധതികൾ</span>
+          <span class="lang-en">Projects</span>
+        </a>
+      </li>
+      <li>
+        <a href="shares">
+          <span class="lang-ml ml-text">ഓഹരികൾ</span>
+          <span class="lang-en">Shareholding</span>
+        </a>
+      </li>
+      <li>
+        <a href="contact">
+          <span class="lang-ml ml-text">ബന്ധപ്പെടുക</span>
+          <span class="lang-en">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- News Ticker -->
+  <div class="ticker-wrap">
+    <div class="ticker-title">
+      <span class="lang-ml ml-text">അറിയിപ്പുകൾ</span>
+      <span class="lang-en">Updates</span>
+    </div>
+    <marquee class="ticker-content">
+      <span class="lang-ml ml-text"
+        >ഓഹരി ഉടമകളെ ക്ഷണിക്കുന്നു! മികച്ച നിക്ഷേപ അവസരം. കേരളത്തിലുടനീളം
+        വിദ്യാഭ്യാസ സ്ഥാപനങ്ങൾ ആരംഭിക്കുന്നു.</span
+      >
+      <span class="lang-en"
+        >Inviting Shareholders! A secure investment opportunity in Kerala's
+        expanding education sector.</span
+      >
+    </marquee>
+  </div>
+</div>
+
+<style>
+  /* --- MOBILE HEADER --- */
+  .mobile-nav-header {
+    display: none;
+    background-color: var(--nic-blue);
+    color: white;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  /* --- NAVIGATION --- */
+  .navbar {
+    background-color: var(--nic-blue);
+    border-bottom: 4px solid var(--govt-yellow);
+  }
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .navbar li {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  .navbar a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  .navbar a:hover {
+    background-color: var(--nic-red);
+  }
+
+  /* --- NEWS TICKER --- */
+  .ticker-wrap {
+    display: flex;
+    background-color: #fff9e6;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .ticker-title {
+    background-color: var(--nic-red);
+    color: #fff;
+    padding: 8px 15px;
+    font-weight: bold;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .ticker-content {
+    padding: 8px 15px;
+    color: var(--nic-blue);
+    font-weight: bold;
+    flex-grow: 1;
+  }
+
+  /* --- MOBILE RESPONSIVENESS --- */
+  @media (max-width: 768px) {
+    .mobile-nav-header {
+      display: flex; /* Show mobile header on small screens */
+    }
+    .navbar {
+      display: none; /* Hide menu by default on mobile */
+      flex-direction: column;
+    }
+    .navbar.active {
+      display: block; /* Show when toggled via JS */
+    }
+    .navbar ul {
+      flex-direction: column;
+    }
+    .navbar li {
+      border-right: none;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .ticker-wrap {
+      flex-direction: column;
+    }
+    .ticker-title {
+      text-align: center;
+    }
+  }
+</style>
+
+<script>
+  // Client-side JavaScript for Mobile Menu Toggle
+  const toggleBtn = document.getElementById("mobile-menu-toggle");
+  const navMenu = document.getElementById("nav-menu");
+
+  toggleBtn.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+</script>

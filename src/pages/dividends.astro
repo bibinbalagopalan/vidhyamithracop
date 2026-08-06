@@ -1,0 +1,714 @@
+---
+// src/pages/dividends.astro
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="Dividend & Profit Sharing - VidhyaMithra">
+  <Header />
+  <Navigation />
+
+  <div class="content-wrapper" style="justify-content: center;">
+    <main class="main-content" style="flex: 1; max-width: 1000px; width: 100%;">
+      <!-- Page Title -->
+      <div class="content-box title-box-custom">
+        <h2 class="text-center m-0">
+          <span class="lang-ml ml-text" style="color: var(--nic-blue);"
+            >ലാഭവിഹിതവും മിച്ചത്തുക പുനർനിക്ഷേപവും</span
+          >
+          <span class="lang-en" style="color: var(--nic-blue);"
+            >Dividend Distribution & Surplus Reinvestment</span
+          >
+        </h2>
+      </div>
+
+      <!-- Section 1: The 1.5 Crore Profit Scenario & P&L Statement -->
+      <div class="content-box">
+        <h3 class="section-heading">
+          <span class="lang-ml ml-text"
+            >സാമ്പത്തിക മാതൃക: വരുമാനവും ലാഭവിഹിതവും (FY 2026-27 പ്രൊജക്ഷൻ)</span
+          >
+          <span class="lang-en"
+            >Financial Model: Revenue & Dividend Projection (FY 2026-27)</span
+          >
+        </h3>
+
+        <p
+          class="lang-ml ml-text"
+          style="font-size: 15px; line-height: 1.8; text-align: justify;"
+        >
+          വിദ്യാമിത്രയുടെ സുതാര്യമായ സാമ്പത്തിക മാതൃക മനസ്സിലാക്കാൻ ഒരു ഉദാഹരണം
+          നോക്കാം. പ്രധാനമായും കോച്ചിംഗ് സെന്ററുകൾ, ആപ്പ് സബ്‌സ്‌ക്രിപ്‌ഷനുകൾ,
+          പരസ്യവരുമാനം എന്നീ മൂന്ന് മാർഗ്ഗങ്ങളിലൂടെയാണ് സൊസൈറ്റി വരുമാനം
+          കണ്ടെത്തുന്നത്. 2026-27 സാമ്പത്തിക വർഷത്തെ പ്രതീക്ഷിക്കുന്ന
+          വരുമാന-ചെലവ് കണക്കുകൾ (Income & Expenditure Projection) താഴെ നൽകുന്നു:
+        </p>
+        <p
+          class="lang-en"
+          style="font-size: 15px; line-height: 1.8; text-align: justify;"
+        >
+          To understand VidhyaMithra's transparent financial model, let us look
+          at the projected income and expenditure for FY 2026-27. The society
+          generates revenue primarily through physical coaching centers, digital
+          app subscriptions, and B2B/Ad revenue. Here is the Pro Forma financial
+          statement:
+        </p>
+
+        <!-- Projected Income & Expenditure Table -->
+        <h4
+          style="color: var(--nic-blue); margin-bottom: 10px; margin-top: 25px; text-align: center; border-bottom: 1px dashed #ccc; padding-bottom: 5px;"
+        >
+          <span class="lang-ml ml-text"
+            >പ്രതീക്ഷിക്കുന്ന വരുമാന-ചെലവ് കണക്കുകൾ (Projected Income &
+            Expenditure)</span
+          >
+          <span class="lang-en">Projected Income & Expenditure Statement</span>
+        </h4>
+
+        <table class="table-govt mb-4" style="font-size: 14px;">
+          <thead>
+            <tr style="background-color: var(--nic-blue); color: white;">
+              <th style="width: 70%;">
+                <span class="lang-ml ml-text">വിവരണം</span>
+                <span class="lang-en">Particulars</span>
+              </th>
+              <th style="text-align: right;">
+                <span class="lang-ml ml-text">തുക (₹)</span>
+                <span class="lang-en">Amount (₹)</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Income Section -->
+            <tr style="background-color: #e6f0fa; font-weight: bold;">
+              <td colspan="2">
+                <span class="lang-ml ml-text"
+                  >വരുമാനം (INCOME / GROSS REVENUE)</span
+                >
+                <span class="lang-en">INCOME (GROSS REVENUE)</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >കോച്ചിംഗ് സെന്റർ ഫീസ് (500 വിദ്യാർത്ഥികൾ)</span
+                >
+                <span class="lang-en"
+                  >Coaching Center Fees (Projected 500 Students)</span
+                >
+              </td>
+              <td style="text-align: right;">₹2,50,00,000</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >എഡ്യൂക്കേഷൻ ആപ്പ് സബ്സ്ക്രിപ്ഷൻ (10,000 യൂസർമാർ)</span
+                >
+                <span class="lang-en"
+                  >EdTech App Subscriptions (Target 10,000 Users)</span
+                >
+              </td>
+              <td style="text-align: right;">₹1,00,00,000</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >പരസ്യ വരുമാനവും B2B കരാറുകളും</span
+                >
+                <span class="lang-en">In-App Ad Revenue & B2B Tie-ups</span>
+              </td>
+              <td style="text-align: right; border-bottom: 2px solid #ccc;"
+                >₹50,00,000</td
+              >
+            </tr>
+            <tr style="font-weight: bold; font-size: 15px;">
+              <td>
+                <span class="lang-ml ml-text"
+                  >ആകെ വരുമാനം (Total Gross Revenue) [A]</span
+                >
+                <span class="lang-en">Total Gross Revenue [A]</span>
+              </td>
+              <td style="text-align: right; color: var(--nic-blue);"
+                >₹4,00,00,000</td
+              >
+            </tr>
+
+            <!-- Expenditure Section -->
+            <tr style="background-color: #ffebee; font-weight: bold;">
+              <td colspan="2">
+                <span class="lang-ml ml-text">ചെലവുകൾ (EXPENDITURE)</span>
+                <span class="lang-en">EXPENDITURE (OPERATING COSTS)</span>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >അധ്യാപകരുടെയും ജീവനക്കാരുടെയും ശമ്പളം</span
+                >
+                <span class="lang-en"
+                  >Faculty & Administrative Staff Salaries</span
+                >
+              </td>
+              <td style="text-align: right;">₹1,20,00,000</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >കെട്ടിട വാടക, ഇലക്ട്രിസിറ്റി, ഓഫീസ് ചെലവുകൾ</span
+                >
+                <span class="lang-en">Rent, Utilities & Admin Overheads</span>
+              </td>
+              <td style="text-align: right;">₹40,00,000</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >ഐ.ടി ഇൻഫ്രാസ്ട്രക്ചർ & ആപ്പ് മെയിന്റനൻസ്</span
+                >
+                <span class="lang-en">IT Infrastructure & App Maintenance</span>
+              </td>
+              <td style="text-align: right;">₹30,00,000</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >മാർക്കറ്റിംഗ് & പരസ്യ ചെലവുകൾ</span
+                >
+                <span class="lang-en">Marketing & Promotions</span>
+              </td>
+              <td style="text-align: right;">₹30,00,000</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >തേയ്മാനം & മറ്റ് ചെലവുകൾ (Depreciation & Contingency)</span
+                >
+                <span class="lang-en">Depreciation & Contingency Reserves</span>
+              </td>
+              <td style="text-align: right; border-bottom: 2px solid #ccc;"
+                >₹30,00,000</td
+              >
+            </tr>
+            <tr style="font-weight: bold; font-size: 15px;">
+              <td>
+                <span class="lang-ml ml-text"
+                  >ആകെ ചെലവ് (Total Expenditure) [B]</span
+                >
+                <span class="lang-en">Total Expenditure [B]</span>
+              </td>
+              <td style="text-align: right; color: var(--nic-red);"
+                >₹2,50,00,000</td
+              >
+            </tr>
+
+            <!-- Net Profit -->
+            <tr
+              style="background-color: #e8f5e9; font-weight: bold; font-size: 16px;"
+            >
+              <td>
+                <span class="lang-ml ml-text"
+                  >അറ്റാദായം (Net Profit) [A - B]</span
+                >
+                <span class="lang-en">Net Profit [A - B]</span>
+              </td>
+              <td style="text-align: right; color: #2e7d32;">₹1,50,00,000</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Dividend Calculation -->
+        <p
+          class="lang-ml ml-text"
+          style="font-size: 15px; line-height: 1.8; text-align: justify; margin-top: 25px;"
+        >
+          മുകളിൽ കാണിച്ചിരിക്കുന്ന <strong>1.5 കോടി രൂപയുടെ</strong> അറ്റാദായത്തിൽ
+          നിന്ന് ഓഹരി ഉടമകൾക്കുള്ള ലാഭവിഹിതം എങ്ങനെ കണക്കാക്കുന്നുവെന്ന് താഴെ നൽകുന്നു.
+          സൊസൈറ്റി ആകെ <strong>3,000 ഓഹരികൾ</strong> (₹75 ലക്ഷം മൂലധനം) മാത്രമേ വിതരണം
+          ചെയ്തിട്ടുള്ളൂ എന്ന് കരുതുക:
+        </p>
+        <p
+          class="lang-en"
+          style="font-size: 15px; line-height: 1.8; text-align: justify; margin-top: 25px;"
+        >
+          Based on the projected Net Profit of <strong>₹1.5 Crores</strong> above,
+          here is how the dividend is calculated and distributed. Assuming only <strong
+            >3,000 shares</strong
+          > have been issued (Total Paid-up Capital of ₹75 Lakhs), the distribution
+          will be as follows:
+        </p>
+
+        <table class="table-govt mt-3">
+          <tbody>
+            <tr>
+              <td style="width: 70%;">
+                <span class="lang-ml ml-text"
+                  >വാർഷിക അറ്റാദായം (Net Profit)</span
+                >
+                <span class="lang-en">Projected Annual Net Profit</span>
+              </td>
+              <td
+                style="font-weight: bold; color: var(--nic-blue); text-align: right;"
+                >₹1,50,00,000/-</td
+              >
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >ആകെ വിതരണം ചെയ്ത ഓഹരികൾ (Total Shares Issued)</span
+                >
+                <span class="lang-en">Total Shares Issued</span>
+              </td>
+              <td style="font-weight: bold; text-align: right;">3,000</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >ആകെ ഓഹരി മൂലധനം (3000 × ₹2,500)</span
+                >
+                <span class="lang-en"
+                  >Total Paid-up Share Capital (3000 × ₹2,500)</span
+                >
+              </td>
+              <td style="font-weight: bold; text-align: right;">₹75,00,000/-</td
+              >
+            </tr>
+            <tr style="background-color: #fff9e6;">
+              <td>
+                <span class="lang-ml ml-text"
+                  >നിയമപ്രകാരമുള്ള പരമാവധി ലാഭവിഹിതം (ഓഹരി മൂലധനത്തിന്റെ 25%)</span
+                >
+                <span class="lang-en"
+                  >Max Permissible Dividend (25% of Share Capital as per Act)</span
+                >
+              </td>
+              <td
+                style="font-weight: bold; color: var(--nic-red); text-align: right;"
+                >₹18,75,000/-</td
+              >
+            </tr>
+            <tr>
+              <td style="font-size: 16px; font-weight: bold;">
+                <span class="lang-ml ml-text"
+                  >ഒരു ഓഹരിക്ക് ലഭിക്കുന്ന വാർഷിക ലാഭവിഹിതം</span
+                >
+                <span class="lang-en">Annual Dividend Payout Per Share</span>
+              </td>
+              <td
+                style="font-size: 18px; font-weight: bold; color: var(--nic-red); text-align: right;"
+                >₹625/-</td
+              >
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size: 12px; color: #666; margin-top: 10px;">
+          <span class="lang-ml ml-text"
+            >* കേരള കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റീസ് ആക്ട് പ്രകാരം ഒരു സൊസൈറ്റിക്ക്
+            പരമാവധി 25% ലാഭവിഹിതം മാത്രമേ നൽകാൻ നിയമം അനുവദിക്കുന്നുള്ളൂ.
+            മുകളിലുള്ളത് ഒരു സാമ്പത്തിക മാതൃക മാത്രമാണ്.</span
+          >
+          <span class="lang-en"
+            >* Under the Kerala Co-operative Societies Act, dividend
+            distribution is legally capped at a maximum of 25% of the face value
+            of the share. The above is a Pro Forma financial model for
+            illustrative purposes.</span
+          >
+        </p>
+      </div>
+
+      <!-- Section 2: Surplus & Loan Benefits -->
+      <div class="content-box benefits-box">
+        <h3
+          class="section-heading"
+          style="border-bottom: none; margin-bottom: 10px;"
+        >
+          <span class="lang-ml ml-text"
+            >മിച്ചത്തുകയുടെ ഉപയോഗവും (Surplus Allocation) 4% വായ്പാ പദ്ധതിയും</span
+          >
+          <span class="lang-en"
+            >Surplus Reinvestment & The 4% Member Loan Pool</span
+          >
+        </h3>
+
+        <p
+          class="lang-ml ml-text"
+          style="font-size: 15px; line-height: 1.8; text-align: justify; margin-top: 0;"
+        >
+          മുകളിലെ ഉദാഹരണത്തിൽ, 1.5 കോടി രൂപയുടെ ലാഭത്തിൽ നിന്ന് 18.75 ലക്ഷം രൂപ
+          പരമാവധി ലാഭവിഹിതമായി നൽകിയ ശേഷം സൊസൈറ്റിക്ക് <strong
+            >1.31 കോടി രൂപ (₹1,31,25,000)</strong
+          > മിച്ചം വരുന്നു. കേരള സഹകരണ നിയമപ്രകാരം നിർബന്ധമായും മാറ്റി വെക്കേണ്ട റിസർവ്
+          ഫണ്ടുകൾക്ക് ശേഷം, ബാക്കി വരുന്ന തുക അംഗങ്ങളുടെ ക്ഷേമത്തിനായി എങ്ങനെ ഉപയോഗിക്കുന്നു
+          എന്ന് താഴെ വ്യക്തമാക്കുന്നു:
+        </p>
+        <p
+          class="lang-en"
+          style="font-size: 15px; line-height: 1.8; text-align: justify; margin-top: 0;"
+        >
+          In the scenario above, after distributing ₹18.75 Lakhs as the maximum
+          legal dividend, the society is left with a massive surplus of <strong
+            >₹1.31 Crores (₹1,31,25,000)</strong
+          >. After fulfilling the mandatory statutory reserve requirements under
+          the Kerala Co-operative Societies Act, the remaining capital is
+          strategically allocated to benefit the shareholders:
+        </p>
+
+        <!-- Surplus Allocation Table -->
+        <table class="table-govt mb-4 mt-3" style="font-size: 14px;">
+          <thead>
+            <tr style="background-color: var(--nic-blue); color: white;">
+              <th style="width: 70%;">
+                <span class="lang-ml ml-text"
+                  >മിച്ചത്തുക വകയിരുത്തൽ (Allocation of Surplus)</span
+                >
+                <span class="lang-en">Proposed Allocation of Surplus</span>
+              </th>
+              <th style="text-align: right;">
+                <span class="lang-ml ml-text">തുക (₹)</span>
+                <span class="lang-en">Amount (₹)</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >നിയമപരമായ റിസർവ് ഫണ്ട് (Statutory Reserve - 25% of Net
+                  Profit)</span
+                >
+                <span class="lang-en"
+                  >Statutory Reserve Fund (25% of Net Profit)</span
+                >
+              </td>
+              <td style="text-align: right;">₹37,50,000</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >സഹകരണ വിദ്യാഭ്യാസ ഫണ്ട് (Co-op Education Fund - 5%)</span
+                >
+                <span class="lang-en"
+                  >Co-operative Education Fund (5% of Net Profit)</span
+                >
+              </td>
+              <td style="text-align: right;">₹7,50,000</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >അടിസ്ഥാന സൗകര്യ വികസന ഫണ്ട് (Infrastructure Expansion)</span
+                >
+                <span class="lang-en"
+                  >Infrastructure & Digital Expansion Reserve</span
+                >
+              </td>
+              <td style="text-align: right;">₹16,25,000</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="lang-ml ml-text"
+                  >അംഗങ്ങളുടെ ക്ഷേമനിധി (Member Welfare & Relief Fund)</span
+                >
+                <span class="lang-en">Member Welfare & Relief Fund</span>
+              </td>
+              <td style="text-align: right;">₹10,00,000</td>
+            </tr>
+            <tr
+              style="background-color: #e8f5e9; font-weight: bold; font-size: 15px;"
+            >
+              <td>
+                <span class="lang-ml ml-text"
+                  >മെമ്പർ ലോൺ പൂൾ (Member Loan Pool)</span
+                >
+                <span class="lang-en">Member Loan Pool</span>
+              </td>
+              <td
+                style="text-align: right; color: #2e7d32; border-bottom: 2px solid #ccc;"
+                >₹60,00,000</td
+              >
+            </tr>
+            <tr style="font-weight: bold;">
+              <td>
+                <span class="lang-ml ml-text"
+                  >ആകെ വകയിരുത്തിയ മിച്ചത്തുക (Total Allocated Surplus)</span
+                >
+                <span class="lang-en">Total Allocated Surplus</span>
+              </td>
+              <td style="text-align: right; color: var(--nic-blue);"
+                >₹1,31,25,000</td
+              >
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- The 4% Loan Feature -->
+        <div
+          style="background-color: #e8f5e9; border: 2px solid #4caf50; border-radius: 5px; padding: 20px; margin-top: 20px; text-align: center; box-shadow: 0 4px 6px rgba(76,175,80,0.1);"
+        >
+          <h4
+            style="color: #2e7d32; font-size: 22px; margin-top: 0; margin-bottom: 12px; font-weight: bold;"
+          >
+            <span class="lang-ml ml-text">വെറും 4% പലിശ നിരക്കിൽ വായ്പകൾ!</span>
+            <span class="lang-en">Collateral Loans at Just 4% Interest!</span>
+          </h4>
+          <p
+            class="lang-ml ml-text"
+            style="font-size: 15px; margin: 0; color: #1b5e20; line-height: 1.6; text-align: justify;"
+          >
+            മുകളിൽ കാണിച്ചിരിക്കുന്ന <strong
+              >60 ലക്ഷം രൂപയുടെ മെമ്പർ ലോൺ പൂൾ</strong
+            > ഉപയോഗിച്ച്, സൊസൈറ്റിയിലെ അംഗങ്ങൾക്ക് അവരുടെ സാമ്പത്തിക ആവശ്യങ്ങൾക്കായി
+            (മതിയായ ഈടിന്മേൽ) <strong>5 ലക്ഷം രൂപ വരെ</strong> വെറും <strong
+              >4% ഫ്ലാറ്റ് പലിശ നിരക്കിൽ</strong
+            > വായ്പ അനുവദിക്കുന്നു. ഉയർന്ന ബാങ്ക് പലിശകളിൽ നിന്ന് അംഗങ്ങളെ സംരക്ഷിക്കാനും,
+            മികച്ച സാമ്പത്തിക സുരക്ഷിതത്വം ഉറപ്പാക്കാനും രണ്ടാം വർഷം മുതൽ ഈ പദ്ധതി
+            സഹായിക്കുന്നു.
+          </p>
+          <p
+            class="lang-en"
+            style="font-size: 15px; margin: 0; color: #1b5e20; line-height: 1.6; text-align: justify;"
+          >
+            Using the massive <strong>₹60 Lakh Member Loan Pool</strong> generated
+            directly from the surplus, the society will offer collateral-backed loans
+            of <strong>up to ₹5,00,000</strong> exclusively to shareholders at a flat
+            interest rate of just <strong>4% per annum</strong>. Starting from
+            Year 2, this insulates our members from high bank interest rates and
+            provides unmatched financial leverage.
+          </p>
+        </div>
+      </div>
+      <!-- Section 3: Interactive Calculator -->
+      <div
+        class="content-box"
+        style="background-color: #f4f8fc; border-top: 4px solid var(--nic-blue);"
+      >
+        <h3 class="section-heading text-center" style="border: none;">
+          <span class="lang-ml ml-text">നിങ്ങളുടെ ലാഭവിഹിതം കണക്കാക്കുക</span>
+          <span class="lang-en">Interactive Dividend Calculator</span>
+        </h3>
+
+        <div class="calculator-container">
+          <div class="calc-input-group">
+            <label for="shareCount">
+              <span class="lang-ml ml-text"
+                >നിങ്ങൾ എടുക്കാൻ ഉദ്ദേശിക്കുന്ന ഓഹരികളുടെ എണ്ണം (1 മുതൽ 100
+                വരെ):</span
+              >
+              <span class="lang-en"
+                >Number of Shares you plan to purchase (Max 100):</span
+              >
+            </label>
+            <input
+              type="number"
+              id="shareCount"
+              min="1"
+              max="100"
+              value="10"
+              class="calc-input"
+            />
+          </div>
+
+          <div class="calc-results">
+            <div class="result-box">
+              <h5>
+                <span class="lang-ml ml-text">ആകെ നിക്ഷേപം</span>
+                <span class="lang-en">Total Investment</span>
+              </h5>
+              <div id="invAmount" class="result-val">₹25,000</div>
+            </div>
+
+            <div class="result-box highlight-box">
+              <h5>
+                <span class="lang-ml ml-text"
+                  >പ്രതീക്ഷിക്കുന്ന വാർഷിക ലാഭവിഹിതം*</span
+                >
+                <span class="lang-en">Expected Annual Dividend*</span>
+              </h5>
+              <div id="divAmount" class="result-val highlight-val">₹6,250</div>
+            </div>
+          </div>
+
+          <p
+            class="text-center"
+            style="font-size: 12px; color: #777; margin-top: 15px;"
+          >
+            <span class="lang-ml ml-text"
+              >*ഇതൊരു അനുമാന കണക്കാണ്. കൃത്യമായ തുക സാമ്പത്തിക വർഷാവസാനമുള്ള
+              യഥാർത്ഥ ലാഭത്തെയും ഭരണസമിതിയുടെ തീരുമാനത്തെയും ആശ്രയിച്ചിരിക്കും.</span
+            >
+            <span class="lang-en"
+              >*This is an illustrative projection based on a 25% dividend
+              payout. Actual dividends depend on the audited net profits and AGM
+              resolutions.</span
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 20px;
+  }
+  .content-box {
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  .title-box-custom {
+    background-color: #e6f0fa;
+    border-top: 4px solid var(--nic-blue);
+    padding: 15px;
+  }
+  .section-heading {
+    color: var(--nic-blue);
+    border-bottom: 2px solid var(--nic-red);
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .benefits-box {
+    border-left: 5px solid var(--nic-red);
+  }
+
+  .table-govt {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+  }
+  .table-govt td {
+    border: 1px solid var(--border-color);
+    padding: 12px 15px;
+    background-color: #fff;
+  }
+  .table-govt tr:nth-child(even) td {
+    background-color: #f9f9f9;
+  }
+  .text-center {
+    text-align: center;
+  }
+
+  /* Calculator Styles */
+  .calculator-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  .calc-input-group {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .calc-input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--nic-blue);
+    font-size: 15px;
+  }
+  .calc-input {
+    width: 100px;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid var(--nic-blue);
+    border-radius: 4px;
+    font-weight: bold;
+    outline: none;
+  }
+  .calc-input:focus {
+    border-color: var(--nic-red);
+  }
+
+  .calc-results {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  @media (max-width: 500px) {
+    .calc-results {
+      flex-direction: column;
+    }
+  }
+
+  .result-box {
+    flex: 1;
+    background: #f5f5f5;
+    border: 1px solid #ccc;
+    padding: 15px;
+    text-align: center;
+    border-radius: 4px;
+  }
+  .result-box h5 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  .result-val {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .highlight-box {
+    background: #ffebee;
+    border-color: var(--nic-red);
+  }
+  .highlight-box h5 {
+    color: var(--nic-red);
+  }
+  .highlight-val {
+    color: var(--nic-red);
+    font-size: 28px;
+  }
+</style>
+
+<script>
+  // Vanilla JS logic for the interactive calculator
+  document.addEventListener("DOMContentLoaded", () => {
+    const shareInput = document.getElementById("shareCount");
+    const invAmountElem = document.getElementById("invAmount");
+    const divAmountElem = document.getElementById("divAmount");
+
+    const faceValue = 2500;
+    const maxDividendPerShare = 625; // 25% of 2500
+
+    function updateCalculator() {
+      let count = parseInt(shareInput.value);
+
+      // Validation constraints
+      if (isNaN(count) || count < 1) count = 1;
+      if (count > 100) count = 100;
+
+      const totalInv = count * faceValue;
+      const totalDiv = count * maxDividendPerShare;
+
+      // Format as Indian Currency (₹)
+      invAmountElem.innerText = "₹" + totalInv.toLocaleString("en-IN");
+      divAmountElem.innerText = "₹" + totalDiv.toLocaleString("en-IN");
+    }
+
+    // Listen for input changes
+    shareInput.addEventListener("input", updateCalculator);
+    shareInput.addEventListener("blur", () => {
+      // Force UI correction if user leaves field with invalid number
+      if (shareInput.value < 1) shareInput.value = 1;
+      if (shareInput.value > 100) shareInput.value = 100;
+      updateCalculator();
+    });
+  });
+</script>

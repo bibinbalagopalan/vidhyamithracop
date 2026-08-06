@@ -1,0 +1,287 @@
+---
+// src/pages/about.astro
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<BaseLayout title="About Us - VidhyaMithra">
+  <Header />
+  <Navigation />
+
+  <div class="content-wrapper" style="justify-content: center;">
+    <main class="main-content" style="flex: 1; max-width: 1000px; width: 100%;">
+      <!-- Page Title -->
+      <div class="content-box title-box-custom">
+        <h2 class="text-center m-0">
+          <span class="lang-ml ml-text" style="color: var(--nic-blue);"
+            >ഞങ്ങളെക്കുറിച്ച് (About Us)</span
+          >
+          <span class="lang-en" style="color: var(--nic-blue);"
+            >About VidhyaMithra Co-operative Society</span
+          >
+        </h2>
+      </div>
+
+      <!-- Institutional Overview -->
+      <div class="content-box">
+        <h3 class="section-heading">
+          <span class="lang-ml ml-text">സ്ഥാപനത്തിന്റെ അവലോകനം</span>
+          <span class="lang-en">Institutional Overview</span>
+        </h3>
+
+        <p
+          class="lang-ml ml-text"
+          style="font-size: 15px; line-height: 1.8; text-align: justify;"
+        >
+          <strong
+            >വിദ്യാമിത്ര പ്രൊപ്പോസ്ഡ് കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റി ലിമിറ്റഡ്</strong
+          > (1969-ലെ കേരള കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റീസ് ആക്ട് പ്രകാരം രജിസ്റ്റർ ചെയ്യാൻ
+          നിർദ്ദേശിച്ചിട്ടുള്ളത്), കേരളത്തിലെ വിദ്യാഭ്യാസ മേഖലയിൽ വിപ്ലവകരമായ മാറ്റങ്ങൾ
+          ലക്ഷ്യമിട്ട് രൂപീകൃതമായ ഒരു സഹകരണ പ്രസ്ഥാനമാണ്. പരമ്പരാഗത വിദ്യാഭ്യാസ രീതികളെ
+          ആധുനിക സാങ്കേതികവിദ്യയുമായി സംയോജിപ്പിച്ച്, സമൂഹത്തിലെ എല്ലാ വിഭാഗം ജനങ്ങൾക്കും
+          ഗുണനിലവാരമുള്ള വിദ്യാഭ്യാസം താങ്ങാവുന്ന ചെലവിൽ ലഭ്യമാക്കുക എന്നതാണ് ഞങ്ങളുടെ
+          മുഖ്യ ലക്ഷ്യം.
+        </p>
+        <p
+          class="lang-en"
+          style="font-size: 15px; line-height: 1.8; text-align: justify;"
+        >
+          <strong>VidhyaMithra Proposed Co-operative Society Ltd.</strong> (To be
+          registered under the Kerala Co-operative Societies Act, 1969) is a forward-thinking
+          cooperative initiative aimed at revolutionizing the educational landscape
+          of Kerala. By seamlessly blending conventional classroom instruction with
+          cutting-edge digital technologies, we strive to make high-quality education
+          accessible and affordable to all sections of society.
+        </p>
+      </div>
+
+      <!-- Vision and Mission Grid -->
+      <div class="about-grid">
+        <div class="about-card">
+          <h4 class="card-title">
+            <span class="lang-ml ml-text">ഞങ്ങളുടെ ദർശനം (Vision)</span>
+            <span class="lang-en">Our Vision</span>
+          </h4>
+          <p
+            class="lang-ml ml-text text-justify"
+            style="font-size: 14px; line-height: 1.7;"
+          >
+            കേരളത്തിലുടനീളമുള്ള വിദ്യാർത്ഥികൾക്ക് ആധുനികവും തൊഴിലധിഷ്ഠിതവുമായ
+            വിദ്യാഭ്യാസ സൗകര്യങ്ങൾ ഒരുക്കിക്കൊണ്ട്, അറിവിന്റെ കാര്യത്തിൽ
+            സംസ്ഥാനത്തെ മുൻനിരയിൽ നിലനിർത്തുക. സുസ്ഥിരമായ ബിസിനസ്സ് മാതൃകയിലൂടെ
+            അംഗങ്ങൾക്ക് മികച്ച സാമ്പത്തിക സുരക്ഷിതത്വവും ലാഭവിഹിതവും
+            ഉറപ്പാക്കുക.
+          </p>
+          <p
+            class="lang-en text-justify"
+            style="font-size: 14px; line-height: 1.7;"
+          >
+            To position Kerala at the forefront of global education by
+            delivering modern, career-oriented learning opportunities to
+            students across the state, while securing robust financial returns
+            and stability for our members through a sustainable cooperative
+            business model.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h4 class="card-title">
+            <span class="lang-ml ml-text">ഞങ്ങളുടെ ദൗത്യം (Mission)</span>
+            <span class="lang-en">Our Mission</span>
+          </h4>
+          <p
+            class="lang-ml ml-text text-justify"
+            style="font-size: 14px; line-height: 1.7;"
+          >
+            1. ഭൗതിക കോച്ചിംഗ് സെന്ററുകളും ഡിജിറ്റൽ എഡ്യൂക്കേഷൻ ആപ്പുകളും
+            (Web/Android/iOS) ഒരേസമയം വികസിപ്പിക്കുക.<br />
+            2. സുതാര്യമായ ഭരണ സംവിധാനത്തിലൂടെയും കൃത്യമായ ലാഭവിഹിത വിതരണത്തിലൂടെയും
+            ഓഹരി ഉടമകളുടെ താൽപര്യങ്ങൾ സംരക്ഷിക്കുക.<br />
+            3. സമൂഹത്തിന്റെ വിദ്യാഭ്യാസ പുരോഗതിയിൽ സജീവമായി പങ്കാളിയാവുക.
+          </p>
+          <p
+            class="lang-en text-justify"
+            style="font-size: 14px; line-height: 1.7;"
+          >
+            1. Establish a synergistic network of physical coaching centers and
+            proprietary EdTech applications (Web, Android, and iOS).<br />
+            2. Safeguard investor interests through transparent governance and disciplined
+            periodic returns.<br />
+            3. Actively contribute to the socio-educational advancement of the community.
+          </p>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="content-box">
+        <h3 class="section-heading">
+          <span class="lang-ml ml-text">ഞങ്ങളുടെ അടിസ്ഥാന മൂല്യങ്ങൾ</span>
+          <span class="lang-en">Core Values & Governance Principles</span>
+        </h3>
+
+        <ul class="values-list">
+          <li>
+            <strong class="lang-ml ml-text">സുതാര്യത (Transparency):</strong>
+            <strong class="lang-en">Transparency:</strong>
+            <span class="lang-ml ml-text">
+              സാമ്പത്തിക ഇടപാടുകളിലും ഭരണനിർവഹണത്തിലും പൂർണ്ണ സുതാര്യത
+              പുലർത്തുന്നു.</span
+            >
+            <span class="lang-en">
+              Uncompromising adherence to clear financial reporting and open
+              operational management.</span
+            >
+          </li>
+          <li>
+            <strong class="lang-ml ml-text"
+              >സഹകരണ തത്വം (Cooperative Integrity):</strong
+            >
+            <strong class="lang-en">Cooperative Integrity:</strong>
+            <span class="lang-ml ml-text">
+              "ഒരംഗത്തിന് ഒരു വോട്ട്" എന്ന ജനാധിപത്യ തത്വത്തിലൂടെ അംഗങ്ങളുടെ
+              കൂട്ടായ്മ ശക്തിപ്പെടുത്തുന്നു.</span
+            >
+            <span class="lang-en">
+              Upholding democratic values and the "One Member, One Vote"
+              principle in decision-making.</span
+            >
+          </li>
+          <li>
+            <strong class="lang-ml ml-text"
+              >ഗുണനിലവാരം (Academic Excellence):</strong
+            >
+            <strong class="lang-en">Academic Excellence:</strong>
+            <span class="lang-ml ml-text">
+              മികച്ച അധ്യാപകരുടെയും വിദഗ്ധരുടെയും സേവനത്തിലൂടെ അക്കാദമിക രംഗത്ത്
+              ഉന്നത നിലവാരം പുലർത്തുന്നു.</span
+            >
+            <span class="lang-en">
+              Delivering uncompromising educational quality through expert
+              faculty and modern curricula.</span
+            >
+          </li>
+          <li>
+            <strong class="lang-ml ml-text"
+              >സാമൂഹിക പ്രതിബദ്ധത (Social Responsibility):</strong
+            >
+            <strong class="lang-en">Social Responsibility:</strong>
+            <span class="lang-ml ml-text">
+              മിതമായ നിരക്കിൽ വിദ്യാഭ്യാസം നൽകുകയും, അംഗങ്ങളുടെ കുടുംബങ്ങൾക്ക്
+              പ്രത്യേക ആനുകൂല്യങ്ങൾ ഉറപ്പാക്കുകയും ചെയ്യുക.</span
+            >
+            <span class="lang-en">
+              Empowering families through accessible learning and exclusive
+              member welfare programs.</span
+            >
+          </li>
+        </ul>
+      </div>
+
+      <!-- Promoter Board Info -->
+      <div
+        class="content-box"
+        style="background-color: #f9f9f9; border-left: 5px solid var(--nic-red);"
+      >
+        <h3 class="section-heading" style="border: none; margin-bottom: 10px;">
+          <span class="lang-ml ml-text">പ്രൊമോട്ടർ ബോർഡും ഭരണഘടനാ പദവിയും</span>
+          <span class="lang-en">Promoter Board & Regulatory Status</span>
+        </h3>
+        <p
+          class="lang-ml ml-text text-justify"
+          style="font-size: 14.5px; line-height: 1.7; margin: 0;"
+        >
+          കേരള കോ-ഓപ്പറേറ്റീവ് സൊസൈറ്റീസ് ആക്ട്, 1969-ന്റെ നിയമവ്യവസ്ഥകൾക്ക്
+          വിധൃതമായി രജിസ്ട്രേഷൻ നടപടികൾ പുരോഗമിക്കുന്ന ഒരു പ്രൊപ്പോസ്ഡ്
+          സൊസൈറ്റിയാണ് വിദ്യാമിത്ര. ചാർട്ടേഡ് അക്കൗണ്ടന്റുകൾ, കോസ്റ്റ്
+          അക്കൗണ്ടന്റുകൾ, വിദ്യാഭ്യാസ വിദഗ്ധർ എന്നിവരടങ്ങുന്ന പ്രൊമോട്ടർ ബോർഡാണ്
+          നിലവിൽ സൊസൈറ്റിയുടെ പ്രാരംഭ പ്രവർത്തനങ്ങൾക്ക് നേതൃത്വം നൽകുന്നത്.
+        </p>
+        <p
+          class="lang-en text-justify"
+          style="font-size: 14.5px; line-height: 1.7; margin: 0;"
+        >
+          VidhyaMithra is currently in its formal registration phase under the
+          Kerala Co-operative Societies Act, 1969. The initial operations are
+          governed by an expert Promoter Board comprising Chartered Accountants,
+          Cost Management Accountants (CMAs), and seasoned educational
+          professionals.
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 20px;
+  }
+  .content-box {
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  .title-box-custom {
+    background-color: #e6f0fa;
+    border-top: 4px solid var(--nic-blue);
+    padding: 15px;
+  }
+  .section-heading {
+    color: var(--nic-blue);
+    border-bottom: 2px solid var(--nic-red);
+    padding-bottom: 8px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .text-justify {
+    text-align: justify;
+  }
+
+  /* About Grid for Vision/Mission */
+  .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .about-card {
+    background: #fff;
+    border: 1px solid var(--border-color);
+    border-top: 3px solid var(--nic-blue);
+    padding: 20px;
+  }
+  .card-title {
+    color: var(--nic-blue);
+    margin-top: 0;
+    font-size: 17px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 8px;
+  }
+
+  /* Values List */
+  .values-list {
+    padding-left: 20px;
+    margin: 0;
+  }
+  .values-list li {
+    margin-bottom: 12px;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  @media (max-width: 768px) {
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

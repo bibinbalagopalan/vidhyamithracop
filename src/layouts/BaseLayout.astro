@@ -1,0 +1,72 @@
+---
+// src/layouts/BaseLayout.astro
+
+// We accept a 'title' prop so different pages can have different browser tabs
+const { title = "VidhyaMithra Proposed Co-operative Society Ltd." } =
+  Astro.props;
+---
+
+<html lang="ml">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <!-- Google Fonts: Manjari for Malayalam, Times New Roman (system font fallback used in CSS) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- The <slot /> is where the content of your pages (like index.astro) will go -->
+      <slot />
+    </div>
+  </body>
+</html>
+
+<!-- We use is:global here so these styles apply to every page and component that uses this layout -->
+<style is:global>
+  /* --- GLOBAL STYLES --- */
+  :root {
+    --nic-blue: #003366;
+    --nic-red: #b22222;
+    --govt-yellow: #ffcc00;
+    --bg-gray: #f5f5f5;
+    --border-color: #cccccc;
+  }
+
+  body {
+    margin: 0;
+    padding: 20px 0; /* Added a little padding so the container floats nicely */
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--bg-gray);
+    color: #333;
+    line-height: 1.6;
+  }
+
+  .ml-text {
+    font-family: "Manjari", sans-serif;
+  }
+
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow for that paper feel */
+  }
+
+  /* Utility classes we will use across components */
+  a {
+    text-decoration: none;
+  }
+  /* Add this inside the <style is:global> block in BaseLayout.astro */
+  html[lang="ml"] .lang-en {
+    display: none !important;
+  }
+
+  html[lang="en"] .lang-ml {
+    display: none !important;
+  }
+</style>
